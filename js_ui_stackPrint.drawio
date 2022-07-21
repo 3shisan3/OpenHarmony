@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-20T07:10:05.749Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="NLzC5VxAAwQJ3aG--5cr" version="20.1.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-21T02:31:49.776Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="gc2sCkAB3_0WsRLhsIRn" version="20.1.2" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1360" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -218,10 +218,72 @@
     </mxGraphModel>
   </diagram>
   <diagram id="hDtbf-zA4DBISrhL9DiU" name="第 2 页">
-    <mxGraphModel dx="1360" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2187" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Zrdil0xcKAJzlIzVpnki-1" value="MainThread" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="24" y="280" width="400" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-1" value="pivotal virtual function:&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=1;" vertex="1" parent="Zrdil0xcKAJzlIzVpnki-1">
+          <mxGeometry y="30" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Zrdil0xcKAJzlIzVpnki-3" value="    HandleLaunchApplication(const AppLaunchData &amp;appLaunchData,&#xa;						                                              const Configuration &amp;config)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zrdil0xcKAJzlIzVpnki-1">
+          <mxGeometry y="60" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zrdil0xcKAJzlIzVpnki-4" value="    HandleScheduleANRProcess()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zrdil0xcKAJzlIzVpnki-1">
+          <mxGeometry y="100" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uhYaOOTYZcCX7MPOTiqz-1" value="&lt;h1&gt;ability_ability_runtime&lt;br&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="260" y="90" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-23" value="NativeEngine（parent class）" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="284" y="650" width="520" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-24" value="+ field: &lt;font color=&quot;#ff1808&quot;&gt;arkui_napi &lt;/font&gt;（仓库名）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="kwX6FUbtJQHW2YQrAjjA-23">
+          <mxGeometry y="26" width="520" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="kwX6FUbtJQHW2YQrAjjA-23">
+          <mxGeometry y="52" width="520" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-26" value="+ method(type): bool BuildJsStackTrace(std::string &amp;stackTraceStr)&#xa;                            // 内部给stackTraceStr传入堆栈message" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="kwX6FUbtJQHW2YQrAjjA-23">
+          <mxGeometry y="60" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-29" value="+ method(type): void RegisterUncaughtExceptionHandler(UncaughtExceptionCallback callback)&#xa;                            // 注册监听异常情况的回调函数" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="kwX6FUbtJQHW2YQrAjjA-23">
+          <mxGeometry y="100" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="Zrdil0xcKAJzlIzVpnki-3" target="kwX6FUbtJQHW2YQrAjjA-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="644" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="kwX6FUbtJQHW2YQrAjjA-32" target="kwX6FUbtJQHW2YQrAjjA-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-32" value="«Annotation»&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;程序启动前操作，大多数行为的注册监听操作&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&lt;b&gt;Component&lt;/b&gt;&lt;br&gt;&lt;b&gt;jsEngine.RegisterUncaughtExceptionHandler(uncaughtTask);&lt;br&gt;注册异常时回调，（&lt;/b&gt;&lt;b&gt;uncaughtTask lamada表达式封装打印操作）&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" style="html=1;dropTarget=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="424" y="425" width="370" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-33" value="" style="shape=module;jettyWidth=8;jettyHeight=4;fontColor=#000000;html=1;" vertex="1" parent="kwX6FUbtJQHW2YQrAjjA-32">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="Zrdil0xcKAJzlIzVpnki-4" target="kwX6FUbtJQHW2YQrAjjA-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="kwX6FUbtJQHW2YQrAjjA-36" target="kwX6FUbtJQHW2YQrAjjA-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-36" value="«Annotation» 记录stacktrace dump等信息&lt;br&gt;&lt;b&gt;Component&lt;/b&gt;&lt;br&gt;&lt;b&gt;mainThreadStackInfo = applicationForAnr_-&amp;gt;GetRuntime()-&amp;gt;BuildJsStackTrace();&lt;br&gt;js_runtime中封装一层&lt;/b&gt;&lt;b&gt;BuildJsStackTrace(),实际返回的stacktrace message&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" style="html=1;dropTarget=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="14" y="520" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kwX6FUbtJQHW2YQrAjjA-37" value="" style="shape=module;jettyWidth=8;jettyHeight=4;fontColor=#000000;html=1;" vertex="1" parent="kwX6FUbtJQHW2YQrAjjA-36">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

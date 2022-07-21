@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-21T02:42:02.012Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="f4kNj_hZI_hjXuQ25S1P" version="20.1.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-21T03:13:26.284Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.49" etag="IkT0WYr3IdHgdV5b-sN0" version="20.1.2" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1360" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -48,7 +48,7 @@
           <mxGeometry y="138" width="230" height="26" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--13" value="pivotal code" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="760" y="750" width="500" height="370" as="geometry">
+          <mxGeometry x="760" y="750" width="500" height="320" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -214,6 +214,12 @@
         <mxCell id="IO2iFSCvqAnWVY3sA_fM-69" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" parent="IO2iFSCvqAnWVY3sA_fM-67" vertex="1">
           <mxGeometry y="202" width="460" height="8" as="geometry" />
         </mxCell>
+        <mxCell id="gc637wlKcGNYt09lKCeK-4" value="arkui_ace_engine" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1220" y="430" width="600" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="gc637wlKcGNYt09lKCeK-5" value="&lt;div&gt;void ArkJSRuntime::RegisterUncaughtExceptionHandler(UncaughtExceptionCallback callback)&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; JSNApi::EnableUserUncaughtErrorHandler(vm_);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; uncaughtErrorHandler_ = callback;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;void ArkJSRuntime::HandleUncaughtException()&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Local&amp;lt;ObjectRef&amp;gt; exception = JSNApi::GetAndClearUncaughtException(vm_);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; if (!exception.IsEmpty() &amp;amp;&amp;amp; !exception-&amp;gt;IsHole() &amp;amp;&amp;amp; uncaughtErrorHandler_ != nullptr) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; shared_ptr&amp;lt;JsValue&amp;gt; errorPtr =&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::static_pointer_cast&amp;lt;JsValue&amp;gt;(std::make_shared&amp;lt;ArkJSValue&amp;gt;(shared_from_this(), exception));&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; uncaughtErrorHandler_(errorPtr, shared_from_this());&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1241" y="531.5" width="480" height="70" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -285,7 +291,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="zl82fyuNG3pqM_zaUJ3s-1" value="&lt;font color=&quot;#ff1808&quot;&gt;OHOS::HiviewDFX::HiSysEvent::Write&lt;/font&gt;&lt;br&gt;&lt;br&gt;最终获取（转换）得到的message传入的接口，以此打印" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;fontColor=#000000;html=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="930" width="390" height="90" as="geometry" />
+          <mxGeometry x="-10" y="800" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JaBNUPBwrtgtio3I0wMF-1" value="arkui_napi" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;fillColor=none;fontColor=#FF1808;" vertex="1" parent="1">
+          <mxGeometry x="194" y="900" width="616" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="JaBNUPBwrtgtio3I0wMF-2" value="&lt;div&gt;void ArkNativeEngineImpl::RegisterUncaughtExceptionHandler(UncaughtExceptionCallback callback)&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; JSNApi::EnableUserUncaughtErrorHandler(vm_);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; uncaughtExceptionCallback_ = callback;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;void ArkNativeEngineImpl::HandleUncaughtException(NativeEngine* engine)&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Local&amp;lt;ObjectRef&amp;gt; exception = JSNApi::GetAndClearUncaughtException(vm_);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; if (!exception.IsEmpty() &amp;amp;&amp;amp; !exception-&amp;gt;IsHole() &amp;amp;&amp;amp; uncaughtExceptionCallback_ != nullptr) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; uncaughtExceptionCallback_(ArkValueToNativeValue(static_cast&amp;lt;ArkNativeEngine*&amp;gt;(engine), exception));&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="215" y="991.5" width="480" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
